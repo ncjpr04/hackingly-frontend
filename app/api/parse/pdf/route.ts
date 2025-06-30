@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ProfileData } from '@/lib/types';
 import { parseText } from '@/lib/parse-text';
-import pdf from 'pdf-parse';
 
 export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {
+    // Dynamically import pdf-parse only when needed
+    const pdf = (await import('pdf-parse')).default;
+    
     const formData = await request.formData();
     const file = formData.get('file') as File;
 

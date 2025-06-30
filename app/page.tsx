@@ -390,7 +390,7 @@ export default function HomePage() {
               Trusted by Professionals
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join thousands of professionals who've transformed their careers with ProfileAI
+              Join thousands of professionals who&apos;ve transformed their careers with ProfileAI
             </p>
           </div>
 
@@ -415,7 +415,7 @@ export default function HomePage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-700 leading-relaxed italic">"{testimonial.content}"</p>
+                  <p className="text-gray-700 leading-relaxed italic">&quot;{testimonial.content}&quot;</p>
                 </CardContent>
               </Card>
             ))}
@@ -430,7 +430,7 @@ export default function HomePage() {
             Ready to Transform Your Career?
           </h2>
           <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
-            Join thousands of professionals who've already optimized their LinkedIn profiles with AI
+            Join thousands of professionals who&apos;ve already optimized their LinkedIn profiles with AI
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

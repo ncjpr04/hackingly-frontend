@@ -236,7 +236,7 @@ export function InputForm({ onComplete, onAnalysisStart }: InputFormProps) {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">LinkedIn Username</h3>
                 <p className="text-gray-600 mb-8">
-                  Enter your LinkedIn username and we'll fetch your profile data for instant AI analysis
+                  Enter your LinkedIn username and we&apos;ll fetch your profile data for instant AI analysis
                 </p>
                 
                 <div className="max-w-md mx-auto space-y-4">
@@ -251,7 +251,7 @@ export function InputForm({ onComplete, onAnalysisStart }: InputFormProps) {
                       className="mt-2"
                     />
                     <p className="text-sm text-gray-500 mt-1">
-                      Just the username part from your LinkedIn URL (e.g., "john-doe" from linkedin.com/in/john-doe)
+                      Just the username part from your LinkedIn URL (e.g., &quot;john-doe&quot; from linkedin.com/in/john-doe)
                     </p>
                   </div>
                   
