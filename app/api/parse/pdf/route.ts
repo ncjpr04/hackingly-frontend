@@ -6,9 +6,6 @@ export const runtime = 'nodejs';
 
 export async function POST(request: NextRequest) {
   try {
-    // Dynamically import pdf-parse only when needed
-    const pdf = (await import('pdf-parse')).default;
-    
     const formData = await request.formData();
     const file = formData.get('file') as File;
 
@@ -23,18 +20,24 @@ export async function POST(request: NextRequest) {
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     
-    // Extract text from PDF
+    // Extract text from PDF with additional error handling
     let extractedText = '';
     try {
-      const pdfData = await pdf(buffer, {
-        // Options to improve text extraction
-        normalizeWhitespace: false,
-        disableCombineTextItems: false
-      });
-      extractedText = pdfData.text;
-      
-      console.log('Extracted PDF text length:', extractedText.length);
-      console.log('First 500 characters:', extractedText.substring(0, 500));
+      // Only import pdf-parse when we're actually processing a file
+      if (typeof window === 'undefined') { // Server-side only
+        const pdfModule = await import('pdf-parse');
+        const pdf = pdfModule.default;
+        
+        const pdfData = await pdf(buffer, {
+          // Options to improve text extraction
+          normalizeWhitespace: false,
+          disableCombineTextItems: false
+        });
+        extractedText = pdfData.text;
+        
+        console.log('Extracted PDF text length:', extractedText.length);
+        console.log('First 500 characters:', extractedText.substring(0, 500));
+      }
       
     } catch (pdfError) {
       console.error('PDF parsing error:', pdfError);
