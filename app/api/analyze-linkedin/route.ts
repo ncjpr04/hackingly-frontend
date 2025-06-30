@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
     console.log(`Fetching LinkedIn profile for username: ${username}`);
 
     // Call the backend API to get LinkedIn profile data
-    const backendResponse = await fetch(`http://localhost:10000/api/profile/${username}`, {
+    const backendResponse = await fetch(`https://hackingly-backend-8tk6.onrender.com/api/profile/${username}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
