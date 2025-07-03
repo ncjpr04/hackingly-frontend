@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Powered LinkedIn Profile Analyser',
+  title: 'SkillSight',
   description: 'Transform your LinkedIn profile with AI-powered analysis, professional rewrites, and personalized career recommendations',
 };
 
