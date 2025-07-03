@@ -134,7 +134,7 @@ export default function HomePage() {
               <TrendingUp className="h-6 w-6 text-white" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              ProfileAI
+              AI LinkedIn Analyser
             </span>
           </div>
           <div className="hidden md:flex items-center gap-8">
@@ -290,7 +290,7 @@ export default function HomePage() {
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="ml-4 text-gray-400 text-sm">ProfileAI Analysis</span>
+                  <span className="ml-4 text-gray-400 text-sm">AI LinkedIn Analysis</span>
                 </div>
                 
                 <div className="space-y-4">
@@ -390,7 +390,7 @@ export default function HomePage() {
               Trusted by Professionals
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Join thousands of professionals who&apos;ve transformed their careers with ProfileAI
+              Join thousands of professionals who&apos;ve transformed their careers with AI LinkedIn Analyser
             </p>
           </div>
 
@@ -460,7 +460,7 @@ export default function HomePage() {
               <div className="p-2 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl">
                 <TrendingUp className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">ProfileAI</span>
+                              <span className="text-xl font-bold text-white">AI LinkedIn Analyser</span>
             </div>
             
             <div className="flex items-center gap-8 text-gray-400">
@@ -471,7 +471,7 @@ export default function HomePage() {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ProfileAI. All rights reserved. Built with AI for professionals.</p>
+                          <p>&copy; 2024 AI LinkedIn Analyser. All rights reserved. Built with AI for professionals.</p>
           </div>
         </div>
       </footer>
